@@ -4,7 +4,7 @@ const { IssueStatus } = require('../constants/issue_status')
 export const insertIssueReport = async (userId, data) => {
     let query = 'INSERT INTO Issue_Report (Iss_Title, Iss_Category, Iss_Status, Iss_Sentemail, Iss_Detail, Iss_Pat_ID) '
     query += 'VALUES (?, ?, ?, ?, ?, ?);'
-    console.log(IssueStatus.COMPLETED)
+  
     try {
         const result = await connection.promise().execute(
             query,
