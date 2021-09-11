@@ -2,7 +2,7 @@ const connection = require('../config/database')
 const { IssueStatus } = require('../constants/issue_status')
 
 export const insertIssueReport = async (userId, data) => {
-    let query = 'INSERT INTO Issue_Report (Iss_Title, Iss_Category, Iss_Status, Iss_Sentemail, Iss_Detail, Iss_Pat_ID) '
+    let query = 'INSERT INTO Issue_Report (Iss_Title, Iss_Category, Iss_Status, Iss_Sent_Email, Iss_Detail, Iss_Pat_ID) '
     query += 'VALUES (?, ?, ?, ?, ?, ?);'
   
     try {
