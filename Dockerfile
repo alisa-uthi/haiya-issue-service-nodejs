@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:16-alpine3.12
 
 WORKDIR /opt/app
 
@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 8003 
+EXPOSE 8003
 
 CMD [ "npm", "run", "watch" ]
