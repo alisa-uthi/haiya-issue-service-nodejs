@@ -1,2 +1,2 @@
 # haiya-issue-service-nodejs
-Issue service of HAIYA project by using Node JS connects with MySQL database
+A microservice to let a customer send the issues regarding the application to the system
